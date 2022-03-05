@@ -7,7 +7,7 @@ const path = require('path');
 const url = 'mongodb://localhost:27017/myshop';
 mongoose.connect(url,{ 
     useNewUrlParser: true, 
-    useUnifiedTopology: true 
+    useUnifiedTopology: true
   });
   app.use('/public',express.static(path.join(__dirname,'public')));
   app.set('view-engine','ejs');
